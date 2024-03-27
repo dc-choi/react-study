@@ -10,11 +10,11 @@ export const Left = styled.div`
   flex: 60%;
   display: flex;
   flex-direction: column;
-  background-color: #210B61;
+  background-color: #210b61;
 `;
 
 export const GptH2 = styled.h2`
-  color: #D292FF;
+  color: #d292ff;
   margin-left: 20px;
   margin-bottom: 20px;
 `;
@@ -24,7 +24,7 @@ export const GptH2Circle = styled.span`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #D292FF;
+  background-color: #d292ff;
 `;
 
 export const ChangedDiv = styled.div`
@@ -40,7 +40,7 @@ export const ChangedDiv = styled.div`
 export const ChangedP = styled.p`
   margin: 0;
   border: 0;
-  color: #D292FF;
+  color: #d292ff;
   font-size: 40px;
   font-weight: bold;
   white-space: pre-wrap;
@@ -57,7 +57,7 @@ export const Right = styled.div`
 
 export const StartedP = styled.p`
   margin: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 30px;
   font-weight: bold;
 `;
@@ -79,7 +79,7 @@ export const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  
+
   &:hover {
     color: black;
   }
