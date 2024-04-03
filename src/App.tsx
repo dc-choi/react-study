@@ -12,8 +12,13 @@ import {
   ChangedDiv,
   ButtonDiv,
 } from '@/style/App.Style';
+import { IApp } from './@types/app';
 
-const App = () => {
+/**
+ * js의 구조 분해 할당을 사용해서 Props를 함축적으로 사용할 수 있음.
+ * TS를 사용하는 경우 타입을 지정해주어야 함.
+ */
+const App = ({ name, name2, startName }: IApp) => {
   const [count, setCount] = useState<number>(0);
   const [text, setText] = useState<string>('');
 
@@ -50,10 +55,10 @@ const App = () => {
         </ChangedDiv>
       </Left>
       <Right>
-        <StartedP>Get started</StartedP>
+        <StartedP>{startName === `Get started` ? startName : `is Not ${startName}`}</StartedP>
         <ButtonDiv>
-          <Button onClick={() => alertFuc('Log In')}>Log in</Button>
-          <Button onClick={() => alertFuc('Sign up')}>Sign up</Button>
+          <Button onClick={() => alertFuc(name)}>{name}</Button>
+          <Button onClick={() => alertFuc(name2)}>{name2}</Button>
         </ButtonDiv>
       </Right>
     </Container>
