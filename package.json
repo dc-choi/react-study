@@ -7,7 +7,7 @@
     "dev": "vite --port 3000",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npx gh-pages -d dist",
     "lint": "eslint src/**/*.{ts,tsx} --ext .ts,.tsx --fix",
     "prettier": "prettier --write src/**/*.{ts,tsx}"
   },
