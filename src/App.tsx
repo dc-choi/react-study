@@ -27,9 +27,14 @@ const App = ({ name, name2, startName }: IApp) => {
     setText(data[count]);
   };
 
-  const alertFuc = (str: string) => {
+  const login = () => {
     // eslint-disable-next-line no-alert
-    alert(str);
+    alert('로그인 버튼 클릭');
+  };
+
+  const signup = () => {
+    // eslint-disable-next-line no-alert
+    alert('회원가입 버튼 클릭');
   };
 
   return (
@@ -54,13 +59,13 @@ const App = ({ name, name2, startName }: IApp) => {
         <div className="flex mt-4">
           <button
             className="px-6 py-2 bg-blue-500 text-white rounded-md hover:text-black mr-2"
-            onClick={() => alertFuc(name)}
+            onClick={() => login()}
           >
             {name}
           </button>
           <button
             className="px-6 py-2 bg-blue-500 text-white rounded-md hover:text-black"
-            onClick={() => alertFuc(name2)}
+            onClick={() => signup()}
           >
             {name2}
           </button>
