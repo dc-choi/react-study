@@ -1,4 +1,4 @@
-export const data = [
+export const mock = [
   `HTML은...\n쉽긴한데...`,
   `CSS 이건 진짜... 참...\n어려워요...`,
   `대체 어떻게... 처리해야 하는거지...`,
