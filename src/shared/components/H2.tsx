@@ -1,16 +1,8 @@
-import React from 'react';
+import { Props } from '@/shared/constants/Props.ts';
 
-export const H2 = ({
-  style,
-  text,
-  children,
-}: {
-  style: string;
-  text: string;
-  children?: React.ReactNode;
-}) => {
+export const H2 = ({ styles, text, children }: Props) => {
   return (
-    <h2 className={`${style}`}>
+    <h2 className={`${styles}`}>
       {text}
       {children}
     </h2>

@@ -1,6 +1,6 @@
 import { P } from '@/shared/components/P.tsx';
 import { useEffect, useRef, useState } from 'react';
-import { mock } from '@/feature/home/api/mock.ts';
+import { mock } from '@/feature/home/api/Mock.ts';
 
 export const LeftChangeText = () => {
   const [count, setCount] = useState<number>(0);
@@ -26,5 +26,5 @@ export const LeftChangeText = () => {
     };
   }, [count]);
 
-  return <P style={'text-[#d292ff] text-4xl font-bold whitespace-pre-wrap'} text={text} />;
+  return <P styles={'text-[#d292ff] text-4xl font-bold whitespace-pre-wrap'} text={text} />;
 };

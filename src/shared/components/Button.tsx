@@ -1,5 +1,6 @@
-// eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
-export const Button = ({ styles, text, fn }: { styles: string; text: string; fn: Function }) => {
+import { Props } from '@/shared/constants/Props.ts';
+
+export const Button = ({ styles, text, fn = () => {} }: Props) => {
   return (
     <button className={`${styles}`} onClick={() => fn()}>
       {text}

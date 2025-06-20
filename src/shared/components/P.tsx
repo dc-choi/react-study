@@ -1,5 +1,5 @@
-import React from 'react';
+import { Props } from '@/shared/constants/Props.ts';
 
-export const P = ({ style, text }: { style: string; text: string; children?: React.ReactNode }) => {
+export const P = ({ style, text }: Props) => {
   return <p className={`${style}`}>{text}</p>;
 };

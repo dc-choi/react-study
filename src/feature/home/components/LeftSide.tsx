@@ -10,7 +10,7 @@ export const LeftSide = () => {
       children={
         <>
           <H2
-            style={'text-[#d292ff] text-2xl mb-5 ml-5 flex items-center'}
+            styles={'text-[#d292ff] text-2xl mb-5 ml-5 flex items-center'}
             text={'ChatGPT'}
             children={<PinkCircle />}
           />

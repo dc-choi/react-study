@@ -1,5 +1,5 @@
-import React from 'react';
+import { Props } from '@/shared/constants/Props.ts';
 
-export const Section = ({ styles, children }: { styles: string; children?: React.ReactNode }) => {
+export const Section = ({ styles, children }: Props) => {
   return <div className={`${styles}`}>{children}</div>;
 };
