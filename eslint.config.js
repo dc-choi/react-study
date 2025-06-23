@@ -47,5 +47,5 @@ export default defineConfig([
       "@typescript-eslint/no-explicit-any": "off",
     },
   },
-  globalIgnores(["**/.eslintrc.js", "**/eslint.config.js", "**/**.yml"]),
+  globalIgnores(["**/.eslintrc.js", "**/eslint.config.js", "**/vite.config.ts", "**/**.yml"]),
 ]);
