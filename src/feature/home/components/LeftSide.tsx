@@ -1,20 +1,19 @@
-import { H2 } from '@/shared/components/H2.tsx';
-import { PinkCircle } from '@/shared/components/PinkCircle.tsx';
-import { Section } from '@/shared/components/Section.tsx';
+import { Circle } from '@/shared/components/Circle.tsx';
 import { LeftChangeText } from '@/feature/home/components/LeftChangeText.tsx';
 
 export const LeftSide = () => {
   return (
-    <Section
-      styles={'flex flex-col flex-[60%] bg-[#210b61] p-5'}
+    <div
+      className={'flex flex-col flex-[60%] p-5'}
       children={
         <>
-          <H2
-            styles={'text-[#d292ff] text-2xl mb-5 ml-5 flex items-center'}
-            text={'ChatGPT'}
-            children={<PinkCircle />}
-          />
-          <Section styles={'mt-[33%] ml-8 flex items-center'} children={<LeftChangeText />} />
+          <h2
+            className={'scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0'}
+          >
+            My Own Style
+            <Circle />
+          </h2>
+          <div className={'mt-[33%] ml-8 flex items-center'} children={<LeftChangeText />} />
         </>
       }
     />

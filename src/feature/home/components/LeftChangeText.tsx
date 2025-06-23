@@ -1,4 +1,3 @@
-import { P } from '@/shared/components/P.tsx';
 import { useEffect, useRef, useState } from 'react';
 import { mock } from '@/feature/home/api/Mock.ts';
 
@@ -26,5 +25,5 @@ export const LeftChangeText = () => {
     };
   }, [count]);
 
-  return <P styles={'text-[#d292ff] text-4xl font-bold whitespace-pre-wrap'} text={text} />;
+  return <p className={'text-[#000000] text-4xl font-bold whitespace-pre-wrap'}>{text}</p>;
 };

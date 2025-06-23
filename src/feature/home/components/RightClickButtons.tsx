@@ -14,16 +14,12 @@ export const RightClickButtons = () => {
 
   return (
     <>
-      <Button
-        styles={'px-6 py-2 bg-blue-500 text-white rounded-md hover:text-black mr-2'}
-        text={'Log In'}
-        fn={login}
-      />
-      <Button
-        styles={'px-6 py-2 bg-blue-500 text-white rounded-md hover:text-black'}
-        text={'Sign up'}
-        fn={signup}
-      />
+      <Button className={'px-6 py-2 bg-white text-black rounded-md mr-2'} onClick={login}>
+        Log In
+      </Button>
+      <Button className={'px-6 py-2 bg-white text-black rounded-md'} onClick={signup}>
+        Sign Up
+      </Button>
     </>
   );
 };
